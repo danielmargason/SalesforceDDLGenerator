@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="553.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <Pane layoutX="14.0" layoutY="14.0" prefHeight="525.0" prefWidth="572.0">
+      <children>
+        <PasswordField id="passwordField" layoutX="256.0" layoutY="22.0" prefWidth="200.0" />
+        <TextField id="usernameField" layoutX="14.0" layoutY="22.0" opacity="1.0" prefWidth="200.0" visible="true" />
+        <Button id="loginButton" layoutX="475.0" layoutY="22.0" mnemonicParsing="false" prefHeight="21.9609375" prefWidth="66.0" text="Login" />
+        <Label layoutX="87.0" layoutY="6.0" text="Username" />
+        <Label layoutX="331.0" layoutY="6.0" text="Password" />
+        <SplitPane dividerPositions="0.425414364640884" focusTraversable="true" layoutX="13.0" layoutY="91.0" prefHeight="420.0" prefWidth="545.0">
+          <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="418.0" prefWidth="186.0">
+              <children>
+                <ScrollPane id="scrollPayneLeft" layoutX="0.0" layoutY="0.0" prefHeight="420.0" prefWidth="228.0">
+                  <content>
+                    <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+                  </content>
+                </ScrollPane>
+              </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+              <children>
+                <ScrollPane id="scrollPaneRight" content="$null" hbarPolicy="AS_NEEDED" layoutX="0.0" layoutY="0.0" pannable="false" prefHeight="418.0" prefWidth="309.0" />
+              </children>
+            </AnchorPane>
+          </items>
+        </SplitPane>
+      </children>
+    </Pane>
+  </children>
+</AnchorPane>
